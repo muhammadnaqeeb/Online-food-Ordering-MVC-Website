@@ -1,0 +1,135 @@
+﻿body {
+    background-color: whitesmoke;
+    font-family: sans -serif;
+    display: flex;
+    justify-content: center;
+}
+
+:root {
+    --yellow: #f5bf23;
+    --black: #111;
+    --white: #fff;
+    --light-color: #666;
+    --light-bg: #eee;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.c {
+    font-size: 2em;
+    border-bottom: 8px solid var(--yellow);
+    border-radius: 6px;
+    width: 72px;
+    margin-top: 20px;
+}
+
+.mainDiv {
+    box-shadow: 0 0 12px grey;
+    padding: 30px 40px 36px 40px;
+    background-color: white;
+    width: 120%;
+}
+
+.google_btn {
+    width: 100%;
+    background-color: white;
+    font-size: 15px;
+    margin-bottom: 18px;
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px solid var(--light-bg);
+}
+
+    .google_btn:hover {
+        background-color: black;
+        color: white;
+    }
+
+.btn {
+    width: 100%;
+    background-color: var(--yellow);
+    color: black;
+    font-size: 18px;
+    margin-bottom: 6px;
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 14px;
+}
+
+    .btn:hover {
+        background-color: black;
+        color: white;
+    }
+
+.labels {
+    font-size: 18px;
+}
+
+.input_fields {
+    width: 95%;
+    height: 27px;
+    padding-left: 14px;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin: 13px 0px;
+   
+}
+
+h3 {
+    margin: 13px 0px 13px 0px;
+}
+
+fieldset {
+    margin: 13px 0px 13px 0px;
+}
+
+.pCenter {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+span {
+    color: dodgerblue;
+}
+
+@media (max-width: 800px) {
+
+    .mainDiv {
+        
+        padding: 30px 41px 36px 40px;
+        
+        width: 79%;
+    }
+}
+@media (max-width: 400px) {
+
+    .mainDiv {
+        padding: 25px 20px 25px 20px;
+        margin: 10px;
+        width: %;
+        margin: 5px;
+    }
+    .c {
+        font-size: 1.5em;
+        border-bottom: 5px solid var(--yellow);
+        border-radius: 6px;
+        width: 50px;
+        margin-top: 15px;
+    }
+    .labels {
+        font-size: 16px;
+    }
+}
+

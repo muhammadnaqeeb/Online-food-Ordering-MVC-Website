@@ -1,0 +1,345 @@
+﻿:root {
+    --yellow: #f5bf23;
+    --black: #111;
+    --white: #fff;
+    --light-color: #666;
+    --light-bg: #eee;
+    --box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*--------- Styling and responsiveness of navbar ------------*/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 8% 10px 8%;
+    box-shadow: 0px 4px 20px lightgrey;
+    width: -webkit-fill-available;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+
+.brandTitle {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+    .nav-links ul li {
+        list-style: none;
+        padding: 1rem;
+        display: block;
+    }
+
+        .nav-links ul li a:hover {
+            border-bottom: 4px solid var(--yellow);
+            border-radius: 3px;
+            width: 70px;
+        }
+
+.toggle-button {
+    position: absolute;
+    top: 1.3rem;
+    right: 2rem;
+    display: none;
+}
+
+.bite-span {
+    color: white;
+    background: black;
+}
+
+section h1 {
+    text-align: center;
+}
+
+@media (max-width:500px) {
+    .toggle-button {
+        display: flex;
+        width: 25px;
+        height: 25px;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+        .nav-links ul li {
+            text-align: center;
+        }
+    /*we give this class by js to display button when hambuger is clicked*/
+    .nav-links.active {
+        display: flex;
+    }
+}
+/*--------- Styling and responsiveness of navbar ended ------------*/
+
+
+
+/*--------- Styling and responsiveness of home section ------------*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--black);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+    .btn:hover {
+        background: var(--yellow);
+        color: var(--black);
+    }
+
+.typing {
+    color: var(--yellow);
+}
+
+.typed-cursor {
+    color: var(--yellow);
+}
+
+.home {
+    padding: 0;
+}
+
+    .home .home-container {
+        min-height: 50rem;
+        display: flex;
+        padding: 0rem 10%;
+        align-items: center;
+        position: relative;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+
+        .home .home-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: -webkit-gradient(linear, left top, right top, from(var(--white)), to(transparent));
+            background: linear-gradient(90deg, var(--white), transparent);
+        }
+
+    .home .content {
+        width: 46rem;
+        position: relative;
+    }
+
+        .home .content h3 {
+            font-size: 4rem;
+            color: var(--black);
+            text-transform: capitalize;
+            text-transform: uppercase;
+        }
+
+        .home .content p {
+            font-size: 1.4rem;
+            color: var(--light-color);
+            line-height: 2;
+            padding: 1rem 0;
+        }
+
+
+section {
+    padding: 3rem 5%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .home {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+        .home .content {
+            text-align: center;
+        }
+
+            .home .content h3 {
+                font-size: 3rem;
+            }
+}
+
+
+
+/*--------- Styling and responsiveness of home section ended ------------*/
+
+
+
+/*--------- Styling and responsiveness of menu section ------------*/
+
+.menu-heading h1 {
+    font-family: 'Segoe Script';
+    text-align: center;
+    margin-top: 65px;
+}
+
+}
+
+.menu-section {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+}
+
+.menu-item-container {
+    display: inline-flex;
+    display: inline-block;
+    margin: 20px;
+    padding: 2rem 1.4rem 1.4rem 1.4rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 25px 0px lightgrey;
+    line-height: 1.6;
+    position: relative;
+    width: 170px;
+}
+
+.img-div img {
+    width: 115px;
+    height: 115px;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-details h4 {
+    margin-bottom: 6px;
+}
+
+.menu-details p {
+    margin-bottom: 6px;
+}
+
+.card-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: var(--yellow);
+    border-radius: 10px 0px 10px 0px;
+}
+
+.menu-details h5 {
+    margin-bottom: 20px;
+}
+
+.card-btn img {
+    width: 25px;
+    height: 25px;
+    margin: 6px 20px 0px 20px;
+}
+
+
+/*Contact us started*/
+.contact_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button2 {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--yellow);
+    color: var(--white);
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    transition: .2s linear;
+    border-radius: 10px;
+}
+
+    .button2:hover {
+        background-color: var(--black);
+    }
+
+.contact_data h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.footer_end {
+    text-align: center;
+    color: gray;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 850px) {
+    .contact_container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .button2 {
+        margin-top: 35px
+    }
+}
+
+@media (max-width: 520px) {
+
+    .home .content h3 {
+        font-size: 2rem;
+    }
+
+    .home .content p {
+        font-size: 1rem;
+    }
+
+    .home .home-container {
+        min-height: 100vh;
+    }
+    section {
+        padding: 1rem 0%;
+        
+    }
+    .contact_container {
+     
+        margin: 0 6%;
+    }
+}

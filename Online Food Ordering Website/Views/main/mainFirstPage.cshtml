@@ -1,0 +1,260 @@
+﻿
+@{
+    ViewBag.Title = "BigBite";
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BigBite</title>
+    <link rel="stylesheet" href="~/Content/Style.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="brandTitle">Big<span class="bite-span">Bite</span></div>
+        <a href="javascript:void(0);" class="toggle-button" onclick="icon_click()">
+            <img id="myImageId" src="~/Content/images/menu.png"></img>
+        </a>
+        <div class="nav-links" id="nav-links">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>@Html.ActionLink("Signup", "RegisterCustumer", "main")</a></li>
+                <li><a>@Html.ActionLink("Login", "LoginCustumer", "main")</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    <!-- navbar end -->
+    <!-- main home   -->
+    <div class="home">
+        <div class="home-container" style="background: url(../Content/images/food6.jpg) no-repeat;">
+            <div class="content">
+                <h3>We provide You <br> <span class="typing"></span></h3>
+                <p>
+                    “Our first priority is delivering the best food for our customers”
+                    <br>  <strong>― You hunger, partner</strong>
+                </p>
+                <a href="#menu-section" class="btn">Menu</a>
+            </div>
+        </div>
+    </div>
+    <!-- main home end   -->
+    <!-- menu section stated   -->
+
+    <div class="menu-heading">
+        <h1>Menu &#127829</h1>
+    </div>
+
+    <section class="menu-section">
+
+        <div class="menu-item-container">
+            <div class="img-div">
+                <img src="~/Content/images/plate1.png" />
+            </div>
+            <div class="menu-details">
+                <h4>Biryani</h4>
+                <p>Karachi Biryani Center</p>
+                <h5>Rs. 400</h5>
+            </div>
+            <a class="card-btn">
+                <img src="~/Content/images/card.png" />
+            </a>
+        </div>
+
+        <!-- next item -->
+        <div class="menu-item-container">
+            <div class="img-div">
+                <img src="~/Content/images/plate2.png" />
+            </div>
+            <div class="menu-details">
+                <h4>Burger</h4>
+                <p>KFC</p>
+                <h5>Rs. 500</h5>
+            </div>
+            <a class="card-btn">
+                <img src="~/Content/images/card.png" />
+            </a>
+        </div>
+
+        <!-- next item -->
+        <div class="menu-item-container">
+            <div class="img-div">
+                <img src="~/Content/images/a1.png" />
+            </div>
+            <div class="menu-details">
+                <h4>SandWich</h4>
+                <p>KFC</p>
+                <h5>Rs. 450</h5>
+            </div>
+            <a class="card-btn">
+                <img src="~/Content/images/card.png" />
+            </a>
+        </div>
+
+
+        <!-- next item -->
+        <div class="menu-item-container">
+            <div class="img-div">
+                <img src="~/Content/images/a2.png" />
+            </div>
+            <div class="menu-details">
+                <h4>Coffee</h4>
+                <p>Ranadam Hotel</p>
+                <h5>Rs. 150</h5>
+            </div>
+            <a class="card-btn">
+                <img src="~/Content/images/card.png" />
+            </a>
+        </div>
+
+
+        <!-- next item -->
+        <div class="menu-item-container">
+            <div class="img-div">
+                <img src="~/Content/images/a3.png" />
+            </div>
+            <div class="menu-details">
+                <h4>Hotdog</h4>
+                <p>Karachi Biryani Center</p>
+                <h5>Rs. 400</h5>
+            </div>
+            <a class="card-btn">
+                <img src="~/Content/images/card.png" />
+            </a>
+        </div>
+
+
+        <!-- next item -->
+        <div class="menu-item-container">
+            <div class="img-div">
+                <img src="~/Content/images/plate1.png" />
+            </div>
+            <div class="menu-details">
+                <h4>Biryani</h4>
+                <p>Karachi Biryani Center</p>
+                <h5>Rs. 700</h5>
+            </div>
+            <a class="card-btn">
+                <img src="~/Content/images/card.png" />
+            </a>
+        </div>
+
+
+        <!-- next item -->
+        <div class="menu-item-container">
+            <div class="img-div">
+                <img src="~/Content/images/a4.png" />
+            </div>
+            <div class="menu-details">
+                <h4>Sandwich</h4>
+                <p>MaDonalds</p>
+                <h5>Rs. 300</h5>
+            </div>
+            <a class="card-btn">
+                <img src="~/Content/images/card.png" />
+            </a>
+        </div>
+
+
+        <!-- next item -->
+        <div class="menu-item-container">
+            <div class="img-div">
+                <img src="~/Content/images/a5.png" />
+            </div>
+            <div class="menu-details">
+                <h4>Pizza</h4>
+                <p>Pizza Hut</p>
+                <h5>Rs. 600</h5>
+            </div>
+            <a class="card-btn">
+                <img src="~/Content/images/card.png" />
+            </a>
+        </div>
+
+
+        <!-- next item -->
+        <div class="menu-item-container">
+            <div class="img-div">
+                <img src="~/Content/images/a6.png" />
+            </div>
+            <div class="menu-details">
+                <h4>Ice-Cream</h4>
+                <p>MaDonalds</p>
+                <h5>Rs. 100</h5>
+            </div>
+            <a class="card-btn">
+                <img src="~/Content/images/card.png" />
+            </a>
+        </div>
+
+    </section>
+    <!-- menu section ended   -->
+    <!--------- contact section started --------->
+    <section class="contact-section">
+        <div class="contact_container">
+            <div class="contact_data">
+
+                <h2>Contact us</h2>
+                <p>If you want to have food in your door step, contact us , we have our 24/7 service.</p>
+            </div>
+
+            <div>
+                <a href="#" class="button2">Contact us</a>
+            </div>
+        </div>
+    </section>
+    <!--------- contact section ended --------->
+    <!-------footer started-->
+    <footer>
+
+
+        <p class="footer_end">&#169; Big Bite</p>
+    </footer>
+    <!--------- footer ended --------->
+    <!---------------------------javaScript------------------------------------>
+    <!-- js for toggle button-->
+    <script>
+
+        function icon_click() {
+            var x = document.getElementById("nav-links");
+            var img = document.getElementById("myImageId");
+            if (x.className === "nav-links") {
+                x.className += " active";
+                img.src = "../Content/images/cross.png";
+
+
+            } else {
+                x.className = "nav-links";
+                img.src = "../Content/images/menu.png";
+            }
+        }
+
+    </script>
+
+
+    <!-- typing js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+
+    <script>
+        var typed = new Typed('.typing', {
+            // Waits 1000ms after typing "First"
+            strings: ['Delicious', 'Tasty', 'Healthy', 'Food.'],
+            typeSpeed: 100,
+            backSpeed: 70,
+            loop: true,
+        });
+    </script>
+
+</body>
+</html>
+
+
+
